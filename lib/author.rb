@@ -13,9 +13,8 @@ class Author
 
   def add_post (post)
     new_post = Post.new(post)
-    @post << new_post
     @@post_count += 1
-    @post
+    @post << new_post
   end
 
   def add_post_by_title(post_title)
